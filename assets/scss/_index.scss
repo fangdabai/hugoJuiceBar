@@ -20,7 +20,7 @@
     .text {
       max-width: 0;
       text-transform: capitalize;
-      animation: typing 3s steps(var(--characters)) infinite;
+      animation: typing 15s steps(var(--characters)) infinite;
       white-space: nowrap;
       overflow: hidden;
     }
@@ -63,7 +63,12 @@
 
 /*Typewriter effect*/
 @keyframes typing {
-  75%,
+  0% {
+    max-width: 0;
+  }
+  10% {
+    max-width: calc(var(--characters) * 1ch); /* Show full content */
+  }
   100% {
     max-width: calc(var(--characters) * 1ch);
   }
