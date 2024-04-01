@@ -3,12 +3,14 @@
         {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+    <span>
+        &copy; {{ now.Year }} 
+        <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>
+    </span>
     {{- end }}
     <span>
-        Powered by
-        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
-        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
+        &
+        <a href="https://github.com/fangdabai/hugoJuiceBar" target="_blank">hugoJuiceBar</a>
     </span>
     </div>
   </footer>
